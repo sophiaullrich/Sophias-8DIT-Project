@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Add font library -->
+		<link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
+			<!-- Add font library -->
+			<link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
+				<!-- Add icon library -->
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+					<!-- style css -->
+					<style>
+
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+
+/* styling headers */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Corben', Georgia, Times, serif; /* styling header font */
+    color: white; /* styling header colour */
+  
+}
+p, div {
+    font-family: 'Nobile', Helvetica, Arial, sans-serif; /* styling paragraph font */
+    color: #24215F; /* styling paragraph colour */
+    
+}
+
+
+h1 { 
+    text-shadow: 1px 1px 1px #ccc;
+} /* adding header shadow */
+.div-that-you want-to-stand-out { 
+    box-shadow: 0 0 1em 1em #ccc;
+}
+
+/* Styling the header */
+.header {
+  padding: 30px;
+  text-align: center; /* aligning header text in the middle of the page */
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/White_square_50%25_transparency.svg/500px-White_square_50%25_transparency.svg.png'); /* adding 50% transparent background to text */
+}
+
+/* Style home button */
+.btn {
+  background-color: #24215F; /* adding background colour */
+  border: none; /* removing borders */
+  color: white; /* adding white text */
+  padding: 12px 16px; /* adding padding */
+  font-size: 16px; /* setting a font size */
+  cursor: pointer; /* mouse pointer on hover */
+  position:relative; /* making position relative */
+  right:345px; /* positioning button on the page */
+  top:-140px; /* positioning button on the page */
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: #24215F; /* adding navy blue colour */
+}
+
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #D5D5D5; /* adding background colour */
+  font-family: Arial, Helvetica, sans-serif; /* adding font family */
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2; /* adding colour */
+  text-align: center; /* aligning text in the center */
+  padding: 14px 16px; /* adding padding */
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif; /* adding font family */
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left; /* positioning column */
+  padding: 10px; /* adding padding */
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Simple_Rectangle_-_Semi-Transparent.svg/1200px-Simple_Rectangle_-_Semi-Transparent.svg.png');
+} /* adding 50% translucent background */
+
+/* Left and right column */
+.column.side {
+  width: 25%; /* adding width */
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Simple_Rectangle_-_Semi-Transparent.svg/1200px-Simple_Rectangle_-_Semi-Transparent.svg.png');
+} /* adding 50% translucent background */
+
+
+/* Middle column */
+.column.middle {
+  width: 50%; /* adding width */
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Simple_Rectangle_-_Semi-Transparent.svg/1200px-Simple_Rectangle_-_Semi-Transparent.svg.png'); /* adding 50% translucent background */
+} 
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* inserting background image */ 
+body {
+  background-image: url('https://content.api.news/v3/images/bin/133a621763fa78f0f38f588b7a08cb95?width=1280'); /* adding background image */
+}
+
+  /* Dropdown Button */
+.dropbtn {
+  background-color: #24215F; /* making background colour of button navy blue */
+  color: white; /* making text of button navy blue */
+  padding: 16px; /*adding padding */
+  font-size: 16px; /* changing font size */
+  border: none; /* removing border */
+}
+
+/* The container 
+						<div> - needed to position the dropdown content */
+.dropdown {
+  position: relative; /* making position relative */
+  display: inline-block; 
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none; /* having no display */
+  position: absolute; /* making position absolute */
+  background-color: #f1f1f1; /* making background colour white */
+  min-width: 160px; /* creating minimum width */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* creating box shadow */
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #24215F; /* making downdown text navy blue */
+  padding: 12px 16px; /* adding padding */
+  text-decoration: none; /* having no text decoration */
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;} 
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #24215F;}
+
+/* ending style css */
+
+						</style>
+					</head>
+					<body>
+						<div class="header">
+							<!-- Adding header -->
+							<h1>North Island</h1>
+							<p>Housing price heatmaps from regions around New Zealand</p>
+						</div>
+						<div class="dropdown">
+							<button class="dropbtn">Select District</button>
+							<div class="dropdown-content">
+								<a href ="index.html">Home</a>
+								<a href="auckland.html">Auckland City District</a>
+								<a href="carterton.html">Carterton District</a>
+								<a href="centralhawkesbay.html">Central Hawkes Bay District</a>
+								<a href="farnorth.html">Far North District</a>
+								<a href="gisbourne.html">Gisbourne District</a>
+								<a href="hamilton.html">Hamilton City District</a>
+								<a href="hastings.html">Hastings District</a>
+								<a href="hauraki.html">Hauraki District</a>
+								<a href="horowhenua.html">Carterton District</a>
+								<a href="hurunui.html">Hurunui District</a>
+								<a href="kaipara.html">Kaipara District</a>
+								<a href="kapaticoast.html">Kapati Coast District</a>
+								<a href="lowerhutt.html">Lower Hutt District</a>
+								<a href="manawatu.html">Manawatu District</a>
+								<a href="masterton.html">Masterton District</a>
+								<a href="matamatapiako.html">Mata-Mata Piako District</a>
+								<a href="napier.html">Napier District</a>
+								<a href="newplymouth.html">New Plymouth District</a>
+								<a href="opotiki.html">Opotiki District</a>
+								<a href="otorohanga.html">Otorohanga District</a>
+								<a href="palmerstonnorth.html">Palmerston North District</a>
+								<a href="porirua.html">Porirua District</a>
+								<a href="rangitikei.html">Rangitikei District</a>
+								<a href="rotorua.html">Rotorua District</a>
+								<a href="ruapehu.html">Ruapehu District</a>
+								<a href="southtaranaki.html">South Taranaki District</a>
+								<a href="palmerstonnorth.html">South Waikato District</a>
+								<a href="soutwairarapa.html">South Wairarapa District</a>
+								<a href="tararua.html">Tararua District</a>
+								<a href="taupo.html">Taupo District</a>
+								<a href="thamescoromandel.html">Thames Coromandel District</a>
+								<a href="upperhutt.html">Upper Hutt District</a>
+								<a href="waimakariri.html">Waimakariri District</a>
+								<a href="waimoto.html">Waimoto District</a>
+								<a href="waipa.html">Waipa District</a>
+								<a href="wairoa.html">Wairoa District</a>
+								<a href="wellington.html">Wellington City District</a>
+								<a href="westernbayofplenty.html">Western Bay of Plenty District</a>
+								<a href="whakatane.html">Whakatane District</a>
+								<a href="whanganui.html">Whanganui District</a>
+								<a href="whangarei.html">Whangarei District</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="column side">
+								<h2>About</h2>
+								<p>The North Island of New Zealand is an island in the southwestern Pacific Ocean. It is the second-largest island in New Zealand after the South Island and lies to the northeast of the smaller Stewart Island. The North Island covers a land area of 113,729 square kilometers (43,911 sq mi), making it slightly larger than the British Isles. It is about one-sixth the size of the South Island. The North Island is divided into two main landmasses: the smaller volcanic North Island and the much larger continental North Island.</p>
+							</div>
+							<div class="column middle">
+								<h2>Pricing</h2>
+								<p>The North Island of New Zealand is home to some of the most expensive real estate in the world. Properties in Auckland, the capital city, routinely sell for millions of dollars. Even small towns and rural areas are not immune to high prices, with homes often going for hundreds of thousands of dollars. There are a number of factors that contribute to the high cost of housing in New Zealand. The country has a limited supply of land, and much of the land that is available is difficult to build on due to the country's topography. In addition, the country's economy is doing well, and this has led to increased demand for housing.
+</p>
+							</div>
+							<div class="column side">
+								<h2>Why Choose the North Island?</h2>
+								<p>There are many reasons to choose the North Island of New Zealand as a place to live. The North Island offers a wide range of scenery and activities, from the beaches of the Bay of Islands to the snow-capped mountains of Tongariro National Park. There are also many great cities and towns to live in, such as Auckland, Wellington and Tauranga. The North Island is also a great place to raise a family. There are excellent schools and plenty of childcare options, as well as plenty of things to do for kids of all ages. The North Island is also a great place to retire to, with plenty of options for retirement living and plenty of things to do to keep active.</p>
+							</div>
+						</div>
+					</body>
+				</html>
