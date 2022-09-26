@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Add font library -->
+		<link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
+			<!-- Add font library -->
+			<link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
+				<!-- Add icon library -->
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+					<!-- style css -->
+					<style>
+
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+
+/* styling headers */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Corben', Georgia, Times, serif; /* styling header font */
+    color: white; /* styling header colour */
+  
+}
+p, div {
+    font-family: 'Nobile', Helvetica, Arial, sans-serif; /* styling paragraph font */
+    color: #24215F; /* styling paragraph colour */
+    
+}
+
+
+h1 { 
+    text-shadow: 1px 1px 1px #ccc;
+} /* adding header shadow */
+.div-that-you want-to-stand-out { 
+    box-shadow: 0 0 1em 1em #ccc;
+}
+
+/* Styling the header */
+.header {
+  padding: 30px;
+  text-align: center; /* aligning header text in the middle of the page */
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/White_square_50%25_transparency.svg/500px-White_square_50%25_transparency.svg.png'); /* adding 50% transparent background to text */
+}
+
+/* Style home button */
+.btn {
+  background-color: #24215F; /* adding background colour */
+  border: none; /* removing borders */
+  color: white; /* adding white text */
+  padding: 12px 16px; /* adding padding */
+  font-size: 16px; /* setting a font size */
+  cursor: pointer; /* mouse pointer on hover */
+  position:relative; /* making position relative */
+  right:345px; /* positioning button on the page */
+  top:-140px; /* positioning button on the page */
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: #24215F; /* adding navy blue colour */
+}
+
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #D5D5D5; /* adding background colour */
+  font-family: Arial, Helvetica, sans-serif; /* adding font family */
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2; /* adding colour */
+  text-align: center; /* aligning text in the center */
+  padding: 14px 16px; /* adding padding */
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif; /* adding font family */
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left; /* positioning column */
+  padding: 10px; /* adding padding */
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Simple_Rectangle_-_Semi-Transparent.svg/1200px-Simple_Rectangle_-_Semi-Transparent.svg.png');
+} /* adding 50% translucent background */
+
+/* Left and right column */
+.column.side {
+  width: 25%; /* adding width */
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Simple_Rectangle_-_Semi-Transparent.svg/1200px-Simple_Rectangle_-_Semi-Transparent.svg.png');
+} /* adding 50% translucent background */
+
+
+/* Middle column */
+.column.middle {
+  width: 50%; /* adding width */
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/White_square_50%25_transparency.svg/500px-White_square_50%25_transparency.svg.png'); /* adding 50% translucent background */
+} 
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* inserting background image */ 
+body {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c9/Queenstown_1_%288168013172%29.jpg'); /* adding background image */
+}
+
+  /* Dropdown Button */
+.dropbtn {
+  background-color: #24215F; /* making background colour of button navy blue */
+  color: white; /* making text of button navy blue */
+  padding: 16px; /*adding padding */
+  font-size: 16px; /* changing font size */
+  border: none; /* removing border */
+}
+
+/* The container 
+						<div> - needed to position the dropdown content */
+.dropdown {
+  position: relative; /* making position relative */
+  display: inline-block; 
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none; /* having no display */
+  position: absolute; /* making position absolute */
+  background-color: #f1f1f1; /* making background colour white */
+  min-width: 160px; /* creating minimum width */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* creating box shadow */
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #24215F; /* making downdown text navy blue */
+  padding: 12px 16px; /* adding padding */
+  text-decoration: none; /* having no text decoration */
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;} 
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #24215F;}
+
+/* ending style css */
+
+						</style>
+					</head>
+					<body>
+						<!-- Add icon library -->
+						<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+							<div class="header">
+                <!-- Adding header -->
+								<h1>Ashburton District</h1>
+								<p>Housing price trend graphs from districts around New Zealand</p>
+							</div>
+							<div class="dropdown">
+								<button class="dropbtn">Select District</button>
+								<div class="dropdown-content">
+                  <!-- Adding pages to dropdown menu -->
+									<a href="index.html">Home</a>
+									<a href="centralotago.html">Central Otago District</a>
+									<a href="christchurch.html">Christchurch City District</a>
+									<a href="clutha.html">Clutha District</a>
+									<a href="dunedin.html">Dunedin City District</a>
+									<a href="gore.html">Gore District</a>
+									<a href="grey.html">Grey District</a>
+									<a href="invercargill.html">Invercargill District</a>
+									<a href="kaikoura.html">Kaikoura District</a>
+									<a href="mackenzie.html">Mackenzie District</a>
+									<a href="marlborough.html">Marlborough District</a>
+									<a href="nelson.html">Nelson District</a>
+									<a href="selwyn.html">Selwyn District</a>
+									<a href="southland.html">Southland District</a>
+									<a href="tasman.html">Tasman District</a>
+									<a href="timaru.html">Timaru District</a>
+									<a href="waimate.html">Waimate District</a>
+									<a href="waitaki.html">Waitaki District</a>
+									<a href="westland.html">Westland District</a>
+								</div>
+							</div>
+							<div class="row">
+								<div class="column side">
+                  <!-- Adding writing to my columns -->
+									<h2>About</h2>
+									<p>Ashburton District is located in the central part of New Zealand’s South Island. The district covers an area of 4,731 square kilometres and has a population of 19,600. The district’s main town is Ashburton, and other towns include Methven, Mount Somers and Rakaia. The district’s economy is based on agriculture, with sheep farming being the main activity. Ashburton is also home to a large number of businesses and industries, including a number of food processing plants. The district has a number of tourist attractions, including the Ashburton Aviation Museum, the Ashburton Racing Club and the Ashburton Art Gallery.</p>
+								</div>
+								<div class="column middle">
+									<h2>Pricing</h2>
+									<p>The median price for a house in the Ashburton district is $360,000. The price of a house in the district has remained relatively stable over the past few years.</p>
+								</div>
+								<div class="column side">
+									<h2>Why Ashburton?</h2>
+									<p>There are many reasons to live in the Ashburton District. The first reason is the climate. The Ashburton District has a temperate climate, with average temperatures ranging from 10-25 degrees Celsius. This makes it a great place to live for those who want to avoid the extreme temperatures found in other parts of New Zealand. The Ashburton District is also home to a number of small towns and villages, each with their own unique charm. These include Methven, which is a popular destination for skiers and snowboarders, and Ashburton, the district's largest town. Finally, the Ashburton District is a great place to live for those who want to be close to Christchurch. Christchurch is the largest city in the South Island and offers a wide range of shopping, dining and entertainment options.</p>
+								</div>
+							</div>
+              <!-- inserting graph -->
+							<iframe src='https://flo.uri.sh/visualisation/11052425/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
+							<div style='width:100%!;margin-top:4px!important;text-align:right!important;'>
+								<a class='flourish-credit' href='https://public.flourish.studio/visualisation/11052425/?utm_source=embed&utm_campaign=visualisation/11052425' target='_top' style='text-decoration:none!important'>
+									<img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'>
+									</a>
+								</div>
+							</body>
+						</html>

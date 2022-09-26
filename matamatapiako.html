@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Add font library -->
+		<link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
+			<!-- Add font library -->
+			<link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
+				<!-- Add icon library -->
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+					<!-- style css -->
+					<style>
+
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+
+/* styling headers */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Corben', Georgia, Times, serif; /* styling header font */
+    color: white; /* styling header colour */
+  
+}
+p, div {
+    font-family: 'Nobile', Helvetica, Arial, sans-serif; /* styling paragraph font */
+    color: #24215F; /* styling paragraph colour */
+    
+}
+
+
+h1 { 
+    text-shadow: 1px 1px 1px #ccc;
+} /* adding header shadow */
+.div-that-you want-to-stand-out { 
+    box-shadow: 0 0 1em 1em #ccc;
+}
+
+/* Styling the header */
+.header {
+  padding: 30px;
+  text-align: center; /* aligning header text in the middle of the page */
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/White_square_50%25_transparency.svg/500px-White_square_50%25_transparency.svg.png'); /* adding 50% transparent background to text */
+}
+
+/* Style home button */
+.btn {
+  background-color: #24215F; /* adding background colour */
+  border: none; /* removing borders */
+  color: white; /* adding white text */
+  padding: 12px 16px; /* adding padding */
+  font-size: 16px; /* setting a font size */
+  cursor: pointer; /* mouse pointer on hover */
+  position:relative; /* making position relative */
+  right:345px; /* positioning button on the page */
+  top:-140px; /* positioning button on the page */
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: #24215F; /* adding navy blue colour */
+}
+
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #D5D5D5; /* adding background colour */
+  font-family: Arial, Helvetica, sans-serif; /* adding font family */
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2; /* adding colour */
+  text-align: center; /* aligning text in the center */
+  padding: 14px 16px; /* adding padding */
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif; /* adding font family */
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left; /* positioning column */
+  padding: 10px; /* adding padding */
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Simple_Rectangle_-_Semi-Transparent.svg/1200px-Simple_Rectangle_-_Semi-Transparent.svg.png');
+} /* adding 50% translucent background */
+
+/* Left and right column */
+.column.side {
+  width: 25%; /* adding width */
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Simple_Rectangle_-_Semi-Transparent.svg/1200px-Simple_Rectangle_-_Semi-Transparent.svg.png');
+} /* adding 50% translucent background */
+
+
+/* Middle column */
+.column.middle {
+  width: 50%; /* adding width */
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Simple_Rectangle_-_Semi-Transparent.svg/1200px-Simple_Rectangle_-_Semi-Transparent.svg.png'); /* adding 50% translucent background */
+} 
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* inserting background image */ 
+body {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c9/Queenstown_1_%288168013172%29.jpg'); /* adding background image */
+}
+
+  /* Dropdown Button */
+.dropbtn {
+  background-color: #24215F; /* making background colour of button navy blue */
+  color: white; /* making text of button navy blue */
+  padding: 16px; /*adding padding */
+  font-size: 16px; /* changing font size */
+  border: none; /* removing border */
+}
+
+/* The container 
+						<div> - needed to position the dropdown content */
+.dropdown {
+  position: relative; /* making position relative */
+  display: inline-block; 
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none; /* having no display */
+  position: absolute; /* making position absolute */
+  background-color: #f1f1f1; /* making background colour white */
+  min-width: 160px; /* creating minimum width */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* creating box shadow */
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #24215F; /* making downdown text navy blue */
+  padding: 12px 16px; /* adding padding */
+  text-decoration: none; /* having no text decoration */
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;} 
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #24215F;}
+
+/* ending style css */
+
+						</style>
+					</head>
+					<body>
+						<div class="header">
+							<!-- Adding header -->
+							<h1>Mata-Mata Piako District</h1>
+							<p>Housing price graphs from districts around New Zealand</p>
+						</div>
+						<div class="dropdown">
+							<button class="dropbtn">Select District</button>
+							<div class="dropdown-content">
+								<a href ="index.html">Home</a>
+								<a href="auckland.html">Auckland City District</a>
+								<a href="carterton.html">Carterton District</a>
+								<a href="centralhawkesbay.html">Central Hawkes Bay District</a>
+								<a href="farnorth.html">Far North District</a>
+								<a href="gisbourne.html">Gisbourne District</a>
+								<a href="hamilton.html">Hamilton City District</a>
+								<a href="hastings.html">Hastings District</a>
+								<a href="hauraki.html">Hauraki District</a>
+								<a href="hurunui.html">Hurunui District</a>
+								<a href="kaipara.html">Kaipara District</a>
+								<a href="kapaticoast.html">Kapati Coast District</a>
+								<a href="lowerhutt.html">Lower Hutt District</a>
+								<a href="manawatu.html">Manawatu District</a>
+								<a href="masterton.html">Masterton District</a>
+								<a href="napier.html">Napier District</a>
+								<a href="newplymouth.html">New Plymouth District</a>
+								<a href="opotiki.html">Opotiki District</a>
+								<a href="otorohanga.html">Otorohanga District</a>
+								<a href="palmerstonnorth.html">Palmerston North District</a>
+								<a href="porirua.html">Porirua District</a>
+								<a href="rangitikei.html">Rangitikei District</a>
+								<a href="rotorua.html">Rotorua District</a>
+								<a href="ruapehu.html">Ruapehu District</a>
+								<a href="southtaranaki.html">South Taranaki District</a>
+								<a href="southwaikato.html">South Waikato District</a>
+								<a href="soutwairarapa.html">South Wairarapa District</a>
+								<a href="tararua.html">Tararua District</a>
+								<a href="taupo.html">Taupo District</a>
+								<a href="thamescoromandel.html">Thames Coromandel District</a>
+								<a href="upperhutt.html">Upper Hutt District</a>
+								<a href="waimakariri.html">Waimakariri District</a>
+								<a href="waimoto.html">Waimoto District</a>
+								<a href="waipa.html">Waipa District</a>
+								<a href="wairoa.html">Wairoa District</a>
+								<a href="wellington.html">Wellington City District</a>
+								<a href="westernbayofplenty.html">Western Bay of Plenty District</a>
+								<a href="whakatane.html">Whakatane District</a>
+								<a href="whanganui.html">Whanganui District</a>
+								<a href="whangarei.html">Whangarei District</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="column side">
+								<h2>About</h2>
+								<p>The Mata-Mata Piako district is located in the north-western part of New Zealand's North Island. It covers an area of 2,500 square kilometres and has a population of approximately 24,000 people. The district is home to a number of towns and cities, including Te Aroha, Morrinsville, Paeroa, and Waihi. The area is also well-known for its farming and agricultural industry, with dairy, sheep, and beef farming being particularly prevalent. The Mata-Mata Piako district has a wide range of leisure and recreational activities on offer, including a number of golf courses, walking and hiking trails, and several museums and art galleries. The district is also home to a number of events and festivals throughout the year, including the popular Te Aroha Mountain Bike Festival and the Paeroa Country Music Festival.</p>
+							</div>
+							<div class="column middle">
+								<h2>Regions</h2>
+								<p>The Mata-Mata Piako district of New Zealand is a beautiful and serene place to live. The average house price in the district is $1,022,222. The prices of homes in the district range from $700,000 to $1,200,000. The median house price in the district is $1,100,000. The district has a wide range of housing options, from small starter homes to large executive homes. There are also a number of apartments and townhomes available in the district. The district is a great place to live for families, retirees, and singles alike. There are a number of schools, parks, and recreation facilities in the district. The district is also home to a number of businesses and industries. The district has a low crime rate and is considered to be a safe place to live.</p>
+							</div>
+							<div class="column side">
+								<h2>Why Mata Mata Piako?</h2>
+								<p>There are many reasons to live in the Mata mata piako district of New Zealand. The area is known for its scenic beauty, and there are plenty of opportunities to enjoy the outdoors. There are also many amenities nearby, including shops and restaurants. The district is also home to a number of schools, so families can find a good education for their children.</p>
+							</div>
+						</div>
+						<iframe src='https://flo.uri.sh/visualisation/11053667/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
+						<div style='width:100%!;margin-top:4px!important;text-align:right!important;'>
+							<a class='flourish-credit' href='https://public.flourish.studio/visualisation/11053667/?utm_source=embed&utm_campaign=visualisation/11053667' target='_top' style='text-decoration:none!important'>
+								<img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'>
+								</a>
+							</div>
+						</body>
+					</html>

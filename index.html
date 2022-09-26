@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Add font library -->
+		<link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
+			<!-- Add font library -->
+			<link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
+				<!-- Add icon library -->
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+					<!-- style css -->
+					<style>
+
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+
+/* styling headers */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Corben', Georgia, Times, serif; /* styling header font */
+    color: white; /* styling header colour */
+  
+}
+p, div {
+    font-family: 'Nobile', Helvetica, Arial, sans-serif; /* styling paragraph font */
+    color: #24215F; /* styling paragraph colour */
+    
+}
+
+
+h1 { 
+    text-shadow: 1px 1px 1px #ccc;
+} /* adding header shadow */
+.div-that-you want-to-stand-out { 
+    box-shadow: 0 0 1em 1em #ccc;
+}
+
+/* Styling the header */
+.header {
+  padding: 30px;
+  text-align: center; /* aligning header text in the middle of the page */
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/White_square_50%25_transparency.svg/500px-White_square_50%25_transparency.svg.png'); /* adding 50% transparent background to text */
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #D5D5D5; /* adding background colour */
+  font-family: Arial, Helvetica, sans-serif; /* adding font family */
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2; /* adding colour */
+  text-align: center; /* aligning text in the center */
+  padding: 14px 16px; /* adding padding */
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif; /* adding font family */
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left; /* positioning column */
+  padding: 10px; /* adding padding */
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/White_square_50%25_transparency.svg/500px-White_square_50%25_transparency.svg.png');
+} /* adding 50% translucent background */
+
+/* Left and right column */
+.column.side {
+  width: 25%; /* adding width */
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Simple_Rectangle_-_Semi-Transparent.svg/1200px-Simple_Rectangle_-_Semi-Transparent.svg.png');
+} /* adding 50% translucent background */
+
+
+/* Middle column */
+.column.middle {
+  width: 50%; /* adding width */
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Simple_Rectangle_-_Semi-Transparent.svg/1200px-Simple_Rectangle_-_Semi-Transparent.svg.png'); /* adding 50% translucent background */
+} 
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* inserting background image */ 
+body {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c9/Queenstown_1_%288168013172%29.jpg'); /* adding background image */
+}
+
+  /* Dropdown Button */
+.dropbtn {
+  background-color: #24215F; /* making background colour of button navy blue */
+  color: white; /* making text of button navy blue */
+  padding: 16px; /*adding padding */
+  font-size: 16px; /* changing font size */
+  border: none; /* removing border */
+}
+
+/* The container 
+						<div> - needed to position the dropdown content */
+.dropdown {
+  position: relative; /* making position relative */
+  display: inline-block; 
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none; /* having no display */
+  position: absolute; /* making position absolute */
+  background-color: #f1f1f1; /* making background colour white */
+  min-width: 160px; /* creating minimum width */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* creating box shadow */
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #24215F; /* making downdown text navy blue */
+  padding: 12px 16px; /* adding padding */
+  text-decoration: none; /* having no text decoration */
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;} 
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #24215F;}
+
+/* ending style css */
+
+						</style>
+					</head>
+					<body>
+						<!-- Adding header  -->
+						<div class="header">
+							<h1>Housing Graphs New Zealand</h1>
+							<!-- Adding subheading  -->
+							<p>Housing price graphs from districts around New Zealand</p>
+						</div>
+						<!-- Adding dropdown menu -->
+						<div class="dropdown">
+							<!-- Adding title to dropdown menu -->
+							<button class="dropbtn">Select Island</button>
+							<!-- Adding content to dropdown menu -->
+							<div class="dropdown-content">
+								<!-- Adding link to north island page of the dropdown menu -->
+								<a href="northisland.html">North Island</a>
+								<!-- Adding link to south island page of the dropdown menu -->
+								<a href="southisland.html">South Island</a>
+							</div>
+						</div>
+						<div class="row">
+							<!-- identifying column place-->
+							<div class="column side">
+								<!-- Adding heading to column -->
+								<h2>About</h2>
+								<!-- Adding text to column -->
+								<p>This housing graph website will show you graphs from each district displaying the trend of median housing prices in the district. It is very important for potential home owerrs or buyers to identify where they are and aren't able to afford housing in New Zealand.</p>
+							</div>
+							<!-- identifying column place-->
+							<div class="column middle">
+								<!-- Adding heading to column -->
+								<h2>Districts</h2>
+								<!-- Adding text to column -->
+								<p>New Zealand is divided into 16 regions for local government purposes. Eleven are administered by regional councils (including the Chatham Islands), and five are administered by territorial authorities, which also perform the functions of regional councils in a limited way. Regional councils are responsible for a range of environmental, economic, and social services.</p>
+							</div>
+							<!-- identifying column place-->
+							<div class="column side">
+								<!-- Adding heading to column -->
+								<h2>Pricing</h2>
+								<!-- Adding text to column -->
+								<p>The housing crisis in New Zealand has been a very prevalent and talked about matter in New Zealand society. The unreasonably high housing prices and the lack of people who can afford them has caused devastation throughout New Zealand.</p>
+							</div>
+						</div>
+					</body>
+				</html>
